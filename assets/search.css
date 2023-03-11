@@ -1,0 +1,62 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+::-webkit-scrollbar {
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #343a40;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4d5358;
+}
+.containerEsas{
+    position: relative;
+    top: 2rem;
+    width: 40rem;
+    height: 70vh;
+}
+@media screen and (max-width:600px){
+    .containerEsas{
+        width: 30rem;
+    }
+    .buttonDiv{
+        text-align: center;
+     }
+}
+@media screen and (max-width:800px){
+  .test{
+      font-size: 10px;
+  }
+}
+.brandName{
+   text-align: center;
+}
+.buttonDiv{
+   text-align: center;
+   position: relative;
+}
+.selectEd{
+    height: 15rem;
+}
+.search{
+    width: 100%;
+}
+.secondDiv{
+   position: relative;
+   top: 2rem;
+}
+.tl{
+    width: 100%;
+}
+.remove{
+    height: 4.74rem;
+}
+.allElements{
+    margin-top: 1rem;
+}

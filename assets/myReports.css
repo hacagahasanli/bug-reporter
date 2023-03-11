@@ -1,0 +1,110 @@
+/* Roots */
+
+:root {
+    --gray-shadow: rgba(30, 30, 60, 0.23);
+    --main-background: #343a40;
+    --hearts-color:red;
+    --border-color:rgb(212, 209, 209);
+}
+
+/* Header */
+
+header{
+    position: relative;
+    top: 2rem;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 4rem;
+    position: relative;
+    top: 1.8rem;
+    left: 4.5rem;
+}
+
+.h1container{
+    position: relative;
+    height: 8rem;
+}
+
+/* Heart */
+
+.heart{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 30%;
+    left: 18%;
+    bottom:1.9rem;
+    background-color: var(--hearts-color);
+    transform:rotate(45deg);
+}
+.heart::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: var(--hearts-color);
+    position: absolute;
+    left: -30px;
+    border-radius: 25px;
+
+}
+.heart::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: var(--hearts-color);
+    position: absolute;
+    top: -30px;
+    border-radius: 25px;
+}
+.heart:hover{
+    box-shadow:3px 1px 50px 17px var(--hearts-color);
+}
+
+/* Container Reports  */
+
+.rowDiv{
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+.myDivReports{
+    position: relative;
+    top: 4rem;
+    border: 0.5px solid var(--border-color);
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 4px;
+}
+
+.myDivReports:hover{
+    box-shadow: -1px 1px 28px 1px var(--gray-shadow);
+}
+
+.pHeader{
+ font-weight: 700;
+}
+
+small{
+    font-family: 'Press Start 2P', cursive;
+ }
+
+ /* Media Query */
+
+ @media screen and (max-width:5600px){
+    .headerName{
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+ 
+    body{
+        overflow-x: hidden;
+    }
+    
+    .heart{
+        position: absolute;
+        top: 4rem;
+        left: 3rem;
+    }
+ }
